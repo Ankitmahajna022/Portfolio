@@ -1,18 +1,20 @@
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600&display=swap");
+
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
 }
 
 body {
   background-color: #0f172a;
   color: #e5e7eb;
   line-height: 1.6;
+  font-family: "Inter", sans-serif;
 }
+
 
 section {
   max-width: 1100px;
@@ -38,11 +40,14 @@ header {
 }
 
 header h1 {
+  font-family: "Playfair Display", serif;
   font-size: 3rem;
   margin-bottom: 10px;
+  font-weight: 600;
 }
 
 header p {
+  font-family: "Inter", sans-serif;
   font-size: 1.2rem;
   color: #94a3b8;
 }
@@ -52,11 +57,13 @@ header a {
   margin: 0 12px;
   text-decoration: none;
   font-weight: 500;
+  font-family: "Inter", sans-serif;
 }
 
 header a:hover {
   text-decoration: underline;
 }
+
 
 .skills {
   display: flex;
@@ -69,6 +76,7 @@ header a:hover {
   padding: 12px 18px;
   border-radius: 10px;
   font-size: 0.9rem;
+  font-family: "Inter", sans-serif;
   transition: 0.3s ease;
 }
 
@@ -77,7 +85,6 @@ header a:hover {
   background: #38bdf8;
   color: #020617;
 }
-
 
 .project-card {
   background: #1e293b;
@@ -94,14 +101,15 @@ header a:hover {
 
 .project-card h3 {
   margin-bottom: 10px;
+  font-family: "Playfair Display", serif;
 }
 
 .project-card a {
   color: #38bdf8;
   text-decoration: none;
   font-weight: 500;
+  font-family: "Inter", sans-serif;
 }
-
 
 ul {
   list-style: none;
@@ -112,15 +120,17 @@ ul li {
   padding: 15px;
   border-radius: 10px;
   margin-bottom: 10px;
+  font-family: "Inter", sans-serif;
 }
+
 
 footer {
   text-align: center;
   padding: 25px;
   background: #020617;
   color: #94a3b8;
+  font-family: "Inter", sans-serif;
 }
-
 
 .fade-up {
   opacity: 0;
@@ -134,7 +144,6 @@ footer {
     transform: translateY(0);
   }
 }
-
 
 @media (max-width: 768px) {
   header h1 {
