@@ -30,7 +30,7 @@ function Project({ title, link }) {
   return (
     <div className="project-card fade-up">
       <h3>{title}</h3>
-      <a href={link} target="_blank" rel="noreferrer">
+      <a href={link} target="_blank">
         View Code →
       </a>
     </div>
