@@ -1,3 +1,4 @@
+import "./Project.css"
 export default function Projects() {
   return (
     <section className="fade-up">
@@ -30,9 +31,17 @@ function Project({ title, link }) {
   return (
     <div className="project-card fade-up">
       <h3>{title}</h3>
-      <a href={link} target="_blank" rel="noreferrer">
-        View Code →
-      </a>
+
+      <div className="project-actions">
+        <a
+          href={link}
+          target="_blank"
+          rel="noreferrer"
+          className="project-btn"
+        >
+          View Code
+        </a>
+      </div>
     </div>
   );
 }
