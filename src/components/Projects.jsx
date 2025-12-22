@@ -28,19 +28,13 @@ export default function Projects() {
 
 function Project({ title, link }) {
   return (
-    <div style={styles.card}>
+    <div className="project-card fade-up">
       <h3>{title}</h3>
-      <a href={link} target="_blank">View Code</a>
+      <a href={link} target="_blank" rel="noreferrer">
+        View Code →
+      </a>
     </div>
   );
 }
 
-const styles = {
-  card: {
-    background: "#1e293b",
-    padding: "20px",
-    marginBottom: "15px",
-    borderRadius: "10px",
-    color:"#ffff"
-  }
-};
+
