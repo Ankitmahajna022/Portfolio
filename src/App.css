@@ -171,10 +171,6 @@ header a:hover::after {
   border-color: #38bdf8;
 }
 
-.project-card:hover {
-  transform: translateY(-12px);
-  box-shadow: 0 25px 60px rgba(56, 189, 248, 0.25);
-}
 
 .project-card h3 {
   font-family: "Playfair Display", serif;
