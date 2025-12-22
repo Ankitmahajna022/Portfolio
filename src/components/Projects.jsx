@@ -40,6 +40,7 @@ const styles = {
     background: "#1e293b",
     padding: "20px",
     marginBottom: "15px",
-    borderRadius: "10px"
+    borderRadius: "10px",
+    color:"#ffff"
   }
 };
