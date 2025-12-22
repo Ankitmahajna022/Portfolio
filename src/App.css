@@ -4,6 +4,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  --bg-main: #0f172a;
+  --bg-card: #1e293b;
+  --bg-dark: #020617;
+  --accent: #38bdf8;
+  --text-main: #e5e7eb;
+  --text-muted: #94a3b8;
+}
 
 body {
   background-color: var(--bg-main);
