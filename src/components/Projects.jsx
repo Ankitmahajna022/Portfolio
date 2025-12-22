@@ -1,6 +1,4 @@
-import { NavLink } from "react-router-dom";
-import "./Project.css";
-
+import "./Project.css"
 export default function Projects() {
   return (
     <section className="fade-up">
@@ -8,22 +6,22 @@ export default function Projects() {
 
       <Project
         title="WhatsApp Chat App"
-        link="/whatsapp-chat"
+        link="https://github.com/Ankitmahajna022/React-All-Projects/tree/main/whatApp-Chat"
       />
 
       <Project
         title="Library Management System"
-        link="/library-management"
+        link="https://github.com/HETVI1405/library-management-system/tree/main/library_management"
       />
 
       <Project
         title="Tweet Posting App"
-        link="/tweet-posting"
+        link="https://github.com/Ankitmahajna022/Node-js-project/tree/main/Tweet_Posting_App"
       />
 
       <Project
         title="Movie Management System"
-        link="/movie-management"
+        link="https://github.com/Ankitmahajna022/Node-js-project/tree/main/Movie_Management_System"
       />
     </section>
   );
@@ -35,12 +33,13 @@ function Project({ title, link }) {
       <h3>{title}</h3>
 
       <div className="project-actions">
-        <NavLink
-          to={link}
+        <a
+          href={link}
+
           className="project-btn"
         >
           View Code
-        </NavLink>
+        </a>
       </div>
     </div>
   );
