@@ -28,11 +28,19 @@ export default function Projects() {
 
 function Project({ title, link }) {
   return (
-    <div className="project-card fade-up">
+    <div style={styles.card}>
       <h3>{title}</h3>
-      <a href={link} target="_blank" rel="noreferrer">
-        View Code →
-      </a>
+      <a href={link} style={{color:"#ffff",textDecoration:"none"}} target="_blank">View Code</a>
     </div>
   );
 }
+
+const styles = {
+  card: {
+    background: "#1e293b",
+    padding: "20px",
+    marginBottom: "15px",
+    borderRadius: "10px",
+    
+  }
+};
