@@ -154,17 +154,6 @@ header a:hover::after {
   padding: 30px;
   border-radius: 18px;
   margin-bottom: 28px;
-  transition: all 0.4s ease;
-  position: relative;
-}
-
-.project-card::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 18px;
-  border: 1px solid transparent;
-  transition: 0.4s;
 }
 
 .project-card:hover::after {
