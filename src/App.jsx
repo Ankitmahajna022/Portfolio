@@ -1,21 +1,15 @@
-import Header from "./components/Header";
-import About from "./components/About";
-import Skills from "./components/Skills";
-import Projects from "./components/Projects";
-import Education from "./components/Education";
-import Footer from "./components/Footer";
-import "./App.css";
+import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Portfolio from './components/Portfolio';
+import "./App.css"
 
 function App() {
   return (
-    <>
-      <Header />
-      <About />
-      <Skills />
-      <Projects />
-      <Education />
-      <Footer />
-    </>
+    <Router>
+      <div className="min-h-screen bg-gray-950 text-gray-100">
+        <Portfolio />
+      </div>
+    </Router>
   );
 }
 

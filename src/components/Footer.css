@@ -1,0 +1,107 @@
+/* ===== Footer ===== */
+.footer {
+  border-top: 1px solid #1e293b;
+  padding: 50px 20px 30px;
+  background: #020617;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Top */
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Info */
+.footer-info h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.footer-info p {
+  color: #94a3b8;
+  font-size: 0.95rem;
+}
+
+/* Icons */
+.footer-icons {
+  display: flex;
+  gap: 14px;
+}
+
+.footer-icons a {
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  background: #1e293b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e5e7eb;
+  border: 1px solid #1e293b;
+  transition: all 0.35s ease;
+}
+
+.footer-icons a:hover {
+  background: #0f172a;
+  border-color: #38bdf8;
+  color: #38bdf8;
+  transform: translateY(-6px) scale(1.05);
+  box-shadow: 0 12px 30px rgba(56, 189, 248, 0.25);
+}
+
+/* Bottom */
+.footer-bottom {
+  margin-top: 35px;
+  padding-top: 25px;
+  border-top: 1px solid #1e293b;
+  text-align: center;
+}
+
+.footer-bottom p {
+  color: #94a3b8;
+  font-size: 0.95rem;
+}
+
+/* Heart */
+.heart {
+  fill: #ef4444;
+  color: #ef4444;
+  animation: pulse 1.6s infinite;
+}
+
+/* Copyright */
+.copyright {
+  margin-top: 6px;
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+/* Animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+    text-align: center;
+  }
+}

@@ -25,7 +25,9 @@ section {
 }
 
 /* ===== Headings ===== */
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-weight: 600;
 }
 
@@ -46,63 +48,7 @@ h2::after {
   border-radius: 10px;
 }
 
-/* ===== Header ===== */
-header {
-  background: radial-gradient(circle at top, #020617, #000);
-  text-align: center;
-  padding: 130px 20px;
-  animation: headerFade 1.2s ease forwards;
-}
 
-@keyframes headerFade {
-  from {
-    opacity: 0;
-    transform: translateY(-40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Name */
-header h1 {
-  font-family: "Playfair Display", serif;
-  font-size: 3.2rem;
-  margin-bottom: 12px;
-  letter-spacing: 1px;
-}
-
-/* Role */
-header p {
-  font-size: 1.25rem;
-  color: #94a3b8;
-  margin-bottom: 25px;
-}
-
-/* Header Links */
-header a {
-  color: #38bdf8;
-  margin: 0 14px;
-  text-decoration: none;
-  font-weight: 500;
-  position: relative;
-}
-
-header a::after {
-  content: "";
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  background: #38bdf8;
-  left: 0;
-  bottom: -4px;
-  transition: 0.3s;
-}
-
-header a:hover::after {
-  width: 100%;
-}
 
 /* ===== About ===== */
 .about-text {
@@ -124,9 +70,10 @@ header a:hover::after {
   padding: 14px 20px;
   border-radius: 14px;
   font-size: 0.95rem;
-  transition: all 0.35s ease;
   position: relative;
   overflow: hidden;
+  transition: transform 0.4s ease, box-shadow 0.4s ease,
+    background 0.4s ease, color 0.4s ease;
 }
 
 .skill-badge::before {
@@ -135,7 +82,7 @@ header a:hover::after {
   inset: 0;
   background: linear-gradient(120deg, transparent, #38bdf8, transparent);
   opacity: 0;
-  transition: 0.4s;
+  transition: opacity 0.4s ease;
 }
 
 .skill-badge:hover::before {
@@ -143,9 +90,10 @@ header a:hover::after {
 }
 
 .skill-badge:hover {
-  transform: translateY(-8px) scale(1.03);
-  color: #020617;
+  transform: translateY(-8px) scale(1.04);
   background: #38bdf8;
+  color: #020617;
+  box-shadow: 0 20px 40px rgba(56, 189, 248, 0.35);
 }
 
 /* ===== Projects ===== */
@@ -154,12 +102,13 @@ header a:hover::after {
   padding: 30px;
   border-radius: 18px;
   margin-bottom: 28px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-.project-card:hover::after {
-  border-color: #38bdf8;
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 50px rgba(56, 189, 248, 0.25);
 }
-
 
 .project-card h3 {
   font-family: "Playfair Display", serif;
@@ -182,11 +131,11 @@ ul li {
   padding: 18px;
   border-radius: 14px;
   margin-bottom: 14px;
-  transition: transform 0.3s ease;
+  transition: transform 0.35s ease;
 }
 
 ul li:hover {
-  transform: translateX(8px);
+  transform: translateX(10px);
 }
 
 /* ===== Footer ===== */
@@ -199,42 +148,49 @@ footer {
 }
 
 /* ===== Animations ===== */
-.fade-up {
-  opacity: 0;
-  transform: translateY(60px);
-  animation: fadeUp 1s ease forwards;
-}
-
-.fade-left {
-  opacity: 0;
-  transform: translateX(-60px);
-  animation: fadeLeft 1s ease forwards;
-}
-
+.fade-up,
+.fade-left,
 .fade-right {
   opacity: 0;
-  transform: translateX(60px);
-  animation: fadeRight 1s ease forwards;
+  will-change: transform, opacity;
+}
+
+/* Fade Up */
+.fade-up {
+  transform: translateY(50px) scale(0.96);
+  animation: fadeUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* Fade Left */
+.fade-left {
+  transform: translateX(-50px) scale(0.96);
+  animation: fadeLeft 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* Fade Right */
+.fade-right {
+  transform: translateX(50px) scale(0.96);
+  animation: fadeRight 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
 @keyframes fadeUp {
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
   }
 }
 
 @keyframes fadeLeft {
   to {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateX(0) scale(1);
   }
 }
 
 @keyframes fadeRight {
   to {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateX(0) scale(1);
   }
 }
 

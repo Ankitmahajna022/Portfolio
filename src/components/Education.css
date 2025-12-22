@@ -1,0 +1,150 @@
+/* ===== Education Section ===== */
+.education-section {
+  padding: 100px 20px;
+}
+
+.education-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Header */
+.education-header h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.education-header h2 span {
+  background: linear-gradient(90deg, #38bdf8, #818cf8);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.education-line {
+  width: 110px;
+  height: 4px;
+  margin-top: 12px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #38bdf8, #818cf8);
+}
+
+/* Cards */
+.education-list {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.education-card {
+  display: flex;
+  gap: 20px;
+  padding: 28px;
+  border-radius: 22px;
+  background: rgba(30, 41, 59, 0.7);
+  border: 1px solid #1e293b;
+  transition: all 0.4s ease;
+}
+
+.education-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  border-color: #38bdf8;
+  box-shadow: 0 30px 60px rgba(56, 189, 248, 0.25);
+}
+
+/* Icon */
+.education-icon {
+  min-width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  border-radius: 14px;
+}
+
+/* Content */
+.education-content {
+  flex: 1;
+}
+
+.education-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+.education-top h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.period {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  background: rgba(59, 130, 246, 0.15);
+  color: #60a5fa;
+}
+
+.institution {
+  font-size: 1.05rem;
+  color: #cbd5f5;
+  margin-bottom: 6px;
+}
+
+.description {
+  color: #94a3b8;
+  font-size: 0.95rem;
+}
+
+/* Learning Box */
+.learning-box {
+  margin-top: 50px;
+  padding: 30px;
+  border-radius: 24px;
+  background: linear-gradient(
+    135deg,
+    rgba(59, 130, 246, 0.15),
+    rgba(139, 92, 246, 0.15)
+  );
+  border: 1px solid rgba(59, 130, 246, 0.25);
+}
+
+.learning-box h4 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.learning-box p {
+  color: #cbd5f5;
+  line-height: 1.7;
+}
+
+/* Animations */
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .education-header h2 {
+    font-size: 2rem;
+  }
+
+  .education-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,126 @@
+/* ===== Projects Section ===== */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 28px;
+}
+
+/* Project Card */
+.project-card {
+  background: rgba(30, 41, 59, 0.85);
+  padding: 28px;
+  border-radius: 20px;
+  border: 1px solid #1e293b;
+  position: relative;
+  transition: transform 0.4s ease, box-shadow 0.4s ease,
+    border-color 0.4s ease;
+  overflow: hidden;
+}
+
+/* Gradient top line */
+.project-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  border-radius: 0 0 12px 12px;
+  background: linear-gradient(90deg, #38bdf8, #818cf8);
+}
+
+/* Hover effect */
+.project-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  border-color: #38bdf8;
+  box-shadow: 0 25px 55px rgba(56, 189, 248, 0.25);
+}
+
+/* Title */
+.project-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+  font-family: "Playfair Display", serif;
+}
+
+/* Description */
+.project-card p {
+  color: #cbd5f5;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 18px;
+}
+
+/* Tech badges */
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 22px;
+}
+
+.project-tech span {
+  background: #020617;
+  padding: 6px 14px;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  color: #38bdf8;
+  border: 1px solid #1e293b;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.project-tech span:hover {
+  background: #38bdf8;
+  color: #020617;
+}
+
+/* Project Links */
+.project-links {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.project-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #020617;
+  padding: 10px 16px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  color: #e5e7eb;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.project-links a:hover {
+  background: #38bdf8;
+  color: #020617;
+  transform: translateY(-2px);
+}
+
+/* GitHub Icon Button */
+.project-icon {
+  background: #020617;
+  padding: 10px;
+  border-radius: 10px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.project-icon:hover {
+  background: #38bdf8;
+  color: #020617;
+  transform: rotate(6deg) scale(1.1);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .project-card {
+    padding: 22px;
+  }
+
+  .project-card h3 {
+    font-size: 1.3rem;
+  }
+}
