@@ -1,4 +1,4 @@
-import "./Project.css"
+
 export default function Projects() {
   return (
     <section className="fade-up">
