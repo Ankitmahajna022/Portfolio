@@ -35,8 +35,6 @@ function Project({ title, link }) {
       <div className="project-actions">
         <a
           href={link}
-          target="_blank"
-          rel="noreferrer"
           className="project-btn"
         >
           View Code
