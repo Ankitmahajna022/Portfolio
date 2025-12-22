@@ -1,170 +1,110 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600&display=swap");
 
-
+/* ===== Reset ===== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* ===== Body ===== */
 body {
   background-color: #0f172a;
   color: #e5e7eb;
-  line-height: 1.6;
   font-family: "Inter", sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
 }
 
-
-section {
-  max-width: 1100px;
-  margin: auto;
-  padding: 80px 20px;
-}
-
-h1, h2, h3 {
-  font-weight: 600;
-}
-
-h2 {
-  font-size: 2rem;
-  color: #38bdf8;
-  margin-bottom: 30px;
-}
-
-
-header {
-  background: linear-gradient(135deg, #020617, #020617);
+/* ===== Header ===== */
+.header {
   text-align: center;
-  padding: 100px 20px;
+  padding: 120px 20px;
+  background: radial-gradient(circle at top, #020617, #000);
 }
 
-header h1 {
+/* Name */
+.header-name {
   font-family: "Playfair Display", serif;
   font-size: 3rem;
-  margin-bottom: 10px;
-  font-weight: 600;
+  margin-bottom: 12px;
 }
 
-header p {
-  font-family: "Inter", sans-serif;
+/* Role */
+.header-role {
   font-size: 1.2rem;
   color: #94a3b8;
 }
 
-header a {
+/* Links */
+.header-links {
+  margin-top: 25px;
+}
+
+.header-links a {
   color: #38bdf8;
-  margin: 0 12px;
+  margin: 0 14px;
   text-decoration: none;
   font-weight: 500;
-  font-family: "Inter", sans-serif;
+  position: relative;
 }
 
-header a:hover {
-  text-decoration: underline;
-}
-
-
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-
-.skill-badge {
-  background: #1e293b;
-  padding: 12px 18px;
-  border-radius: 10px;
-  font-size: 0.9rem;
-  font-family: "Inter", sans-serif;
-  transition: 0.3s ease;
-}
-
-.skill-badge:hover {
-  transform: translateY(-5px);
+.header-links a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
   background: #38bdf8;
-  color: #020617;
+  left: 0;
+  bottom: -4px;
+  transition: 0.3s;
 }
 
-.project-card {
-  background: #1e293b;
-  padding: 25px;
-  border-radius: 14px;
-  margin-bottom: 20px;
-  transition: 0.3s ease;
+.header-links a:hover::after {
+  width: 100%;
 }
 
-.project-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 10px 30px rgba(56, 189, 248, 0.2);
-}
+/* ===== Animations ===== */
 
-.project-card h3 {
-  margin-bottom: 10px;
-  font-family: "Playfair Display", serif;
-}
-
-.project-card a {
-  color: #38bdf8;
-  text-decoration: none;
-  font-weight: 500;
-  font-family: "Inter", sans-serif;
-}
-
-ul {
-  list-style: none;
-}
-
-ul li {
-  background: #1e293b;
-  padding: 15px;
-  border-radius: 10px;
-  margin-bottom: 10px;
-  font-family: "Inter", sans-serif;
-}
-
-
-footer {
-  text-align: center;
-  padding: 25px;
-  background: #020617;
-  color: #94a3b8;
-  font-family: "Inter", sans-serif;
-}
-
-.fade-left {
+/* Fade Up */
+.fade-up {
   opacity: 0;
-  transform: translateX(-40px);
-  animation: fadeLeft 1s ease forwards;
+  transform: translateY(40px);
+  animation: fadeUp 1s ease forwards;
 }
 
-.fade-right {
-  opacity: 0;
-  transform: translateX(40px);
-  animation: fadeRight 1s ease forwards;
-}
-
-@keyframes fadeLeft {
+@keyframes fadeUp {
   to {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 
-@keyframes fadeRight {
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
+/* Delays */
+.fade-delay-1 {
+  opacity: 0;
+  animation: fadeUp 1s ease forwards;
+  animation-delay: 0.3s;
 }
 
+.fade-delay-2 {
+  opacity: 0;
+  animation: fadeUp 1s ease forwards;
+  animation-del
+/* Floating Name */
+.float {
+  animation: float 3s ease-in-out infinite;
+}
 
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
+}
+
+/* ===== Responsive ===== */
 @media (max-width: 768px) {
-  header h1 {
+  .header-name {
     font-size: 2.2rem;
-  }
-
-  section {
-    padding: 60px 15px;
   }
 }
