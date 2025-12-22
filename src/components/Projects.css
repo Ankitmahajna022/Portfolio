@@ -6,10 +6,6 @@
   transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
-.project-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 20px 45px rgba(56, 189, 248, 0.25);
-}
 
 .project-card h3 {
   font-family: "Playfair Display", serif;
