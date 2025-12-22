@@ -28,19 +28,10 @@ export default function Projects() {
 
 function Project({ title, link }) {
   return (
-    <div style={styles.card}>
+    <div className="project-card">
       <h3>{title}</h3>
       <a href={link} style={{color:"#ffff",textDecoration:"none"}} target="_blank">View Code</a>
     </div>
   );
 }
 
-const styles = {
-  card: {
-    background: "#1e293b",
-    padding: "20px",
-    marginBottom: "15px",
-    borderRadius: "10px",
-    
-  }
-};
