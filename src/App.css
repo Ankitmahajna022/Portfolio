@@ -90,7 +90,9 @@ body {
 .fade-delay-2 {
   opacity: 0;
   animation: fadeUp 1s ease forwards;
-  animation-del
+  animation-delay: 0.6s;
+}
+
 /* Floating Name */
 .float {
   animation: float 3s ease-in-out infinite;
