@@ -39,7 +39,6 @@ const Skills = () => {
   return (
     <section className="skills-section">
       <div className="skills-container">
-        {/* Header */}
         <div className="skills-header">
           <h2>
             Technical <span>Skills</span>
@@ -47,7 +46,6 @@ const Skills = () => {
           <div className="skills-line"></div>
         </div>
 
-        {/* Grid */}
         <div className="skills-grid">
           {skillCategories.map((category, index) => (
             <div className="skill-card fade-up" key={index}>

@@ -9,7 +9,6 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
-        {/* Top */}
         <div className="footer-top">
           <div className="footer-info">
             <h3>Ankit Mahajan</h3>
@@ -31,7 +30,7 @@ const Footer = () => {
             </a>
 
             <a
-              href="https://pdflink.to/ankimahajanresume/"
+              href="https://pdflink.to/2a0fbdf0/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Resume"
@@ -41,7 +40,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Bottom */}
+      
         <div className="footer-bottom">
           <p>
             Built with{" "}

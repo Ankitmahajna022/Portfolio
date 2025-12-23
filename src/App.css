@@ -1,13 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600&display=swap");
-
-/* ===== Reset ===== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* ===== Body ===== */
 body {
   background-color: #0f172a;
   color: #e5e7eb;
@@ -16,7 +13,7 @@ body {
   overflow-x: hidden;
 }
 
-/* ===== Sections ===== */
+
 section {
   max-width: 1100px;
   margin: auto;
@@ -24,7 +21,6 @@ section {
   position: relative;
 }
 
-/* ===== Headings ===== */
 h1,
 h2,
 h3 {
@@ -50,7 +46,6 @@ h2::after {
 
 
 
-/* ===== About ===== */
 .about-text {
   font-size: 1.05rem;
   color: #94a3b8;
@@ -58,7 +53,6 @@ h2::after {
   animation: fadeUp 1s ease forwards;
 }
 
-/* ===== Skills ===== */
 .skills {
   display: flex;
   flex-wrap: wrap;
@@ -96,7 +90,6 @@ h2::after {
   box-shadow: 0 20px 40px rgba(56, 189, 248, 0.35);
 }
 
-/* ===== Projects ===== */
 .project-card {
   background: #1e293b;
   padding: 30px;
@@ -121,7 +114,6 @@ h2::after {
   text-decoration: none;
 }
 
-/* ===== Education ===== */
 ul {
   list-style: none;
 }
@@ -138,7 +130,6 @@ ul li:hover {
   transform: translateX(10px);
 }
 
-/* ===== Footer ===== */
 footer {
   text-align: center;
   padding: 30px;
@@ -147,7 +138,6 @@ footer {
   font-size: 0.95rem;
 }
 
-/* ===== Animations ===== */
 .fade-up,
 .fade-left,
 .fade-right {
@@ -155,19 +145,16 @@ footer {
   will-change: transform, opacity;
 }
 
-/* Fade Up */
 .fade-up {
   transform: translateY(50px) scale(0.96);
   animation: fadeUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
-/* Fade Left */
 .fade-left {
   transform: translateX(-50px) scale(0.96);
   animation: fadeLeft 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
-/* Fade Right */
 .fade-right {
   transform: translateX(50px) scale(0.96);
   animation: fadeRight 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards;
@@ -194,17 +181,3 @@ footer {
   }
 }
 
-/* ===== Responsive ===== */
-@media (max-width: 768px) {
-  header h1 {
-    font-size: 2.4rem;
-  }
-
-  section {
-    padding: 80px 15px;
-  }
-
-  h2 {
-    font-size: 1.8rem;
-  }
-}
