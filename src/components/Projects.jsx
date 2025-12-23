@@ -31,7 +31,16 @@ const Projects = () => {
       github: "https://github.com/Ankitmahajna022/Node-js-project/tree/main/Movie_Management_System",
       tech: ["Node.js", "Express", "MongoDB"],
       color: "from-purple-500 to-pink-600"
+    },
+    {
+      title: "Product Filter API",
+      description: "A REST API that demonstrates advanced product filtering using multiple query parameters such as name, brand, category, price range, rating, sorting, and pagination. Supports combined filters in a single endpoint and returns structured responses including totalProducts, totalPages, and currentPage.",
+      github: "https://github.com/Ankitmahajna022/Node-js-project/tree/main/Filter_API_Practical_Task",
+      tech: ["Node.js", "Express.js", "MongoDB", "Mongoose"],
+      color: "from-green-500 to-emerald-600"
     }
+
+
   ];
 
   return (
