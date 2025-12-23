@@ -88,13 +88,78 @@
   }
 }
 
-/* ===== Responsive ===== */
-@media (max-width: 768px) {
-  .about-header h2 {
-    font-size: 2rem;
+@media (max-width: 1024px) {
+  .about-section {
+    padding: 80px 20px;
+  }
+
+  .about-container {
+    max-width: 820px;
   }
 
   .about-text {
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  .stat-card h3 {
+    font-size: 2.1rem;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 60px 18px;
+  }
+
+  .about-header h2 {
+    font-size: 1.9rem;
+    text-align: center;
+  }
+
+  .about-line {
+    margin: 12px auto 0;
+  }
+}
+  .about-text {
+    text-align: center;
     font-size: 0.95rem;
+    line-height: 1.75;
+  }
+
+  .about-stats {
+    margin-top: 40px;
+    gap: 20px;
+  }
+
+  .stat-card {
+    padding: 24px;
+  }
+
+  .stat-card h3 {
+    font-size: 2rem;
+  }
+
+@media (max-width: 480px) {
+  .about-section {
+    padding: 50px 16px;
+  }
+
+  .about-header h2 {
+    font-size: 1.7rem;
+  }
+
+  .about-text {
+    font-size: 0.9rem;
+  }
+
+  .stat-card {
+    padding: 20px;
+    border-radius: 16px;
+  }
+
+  .stat-card h3 {
+    font-size: 1.8rem;
   }
 }
