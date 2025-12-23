@@ -169,11 +169,11 @@ header .mt-20 div div:hover p {
 
 @media (max-width: 568px) {
   header {
-    padding: 70px 14px;
+    padding: 40px 14px;
   }
 
   header h1 {
-    letter-spacing: -0.5px;
+    letter-spacing: -1px;
   }
 
   header p {
